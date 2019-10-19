@@ -5,8 +5,8 @@ import (
 )
 
 func Raid1e(a int, b int) {
-	for i := 0; i < b; i++ {
-		if a > 0 {
+	if a < 1 || b < 1 {
+		for i := 0; i < b; i++ {
 			for j := 0; j < a; j++ {
 				if (i == 0 && j == 0) || (j == a-1 && i == b-1 && j > 0 && i > 0) {
 					z01.PrintRune('A')
@@ -18,7 +18,7 @@ func Raid1e(a int, b int) {
 					z01.PrintRune(' ')
 				}
 			}
+			z01.PrintRune('\n')
 		}
-		z01.PrintRune('\n')
 	}
 }
