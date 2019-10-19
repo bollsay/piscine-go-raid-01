@@ -1,4 +1,4 @@
-package student
+package solutions
 
 import (
 	"github.com/01-edu/z01"
