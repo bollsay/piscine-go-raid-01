@@ -5,7 +5,7 @@ import (
 )
 
 func Raid1d(a int, b int) {
-	if a < 1 || b < 1 {
+	if a > 0 && b > 0 {
 		for i := 0; i < b; i++ {
 			for j := 0; j < a; j++ {
 				if (i == 0 && j == 0) || (i == b-1 && j == 0) {
